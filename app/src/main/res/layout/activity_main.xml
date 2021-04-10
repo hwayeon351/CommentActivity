@@ -71,7 +71,7 @@
                 android:background="@drawable/reload_icon"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginRight="35dp"
                 app:layout_constraintBottom_toTopOf="@id/comment_rv"
                 app:layout_constraintEnd_toEndOf="@id/scroll_part"/>
             <androidx.recyclerview.widget.RecyclerView
