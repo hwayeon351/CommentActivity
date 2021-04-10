@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scroll_part"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="@id/scroll_part"
+                app:layout_constraintStart_toStartOf="@id/scroll_part"
+                app:layout_constraintEnd_toEndOf="@id/scroll_part"
+                android:textSize="16sp"
+                android:layout_marginTop="50dp"
+                android:text="댓글을 입력하고 기능을 테스트 해보세요!!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/write_comment_part"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@id/textView"
+                app:layout_constraintStart_toStartOf="@id/scroll_part"
+                app:layout_constraintEnd_toEndOf="@id/scroll_part"
+                app:layout_constraintBottom_toTopOf="@id/reload_btn"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:id="@+id/write_comment_et"
+                    android:hint="댓글을 입력해 주세요."
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_border_4dp_fefefe"
+                    app:layout_constraintStart_toStartOf="@id/write_comment_part"
+                    app:layout_constraintTop_toTopOf="@id/write_comment_part"
+                    app:layout_constraintBottom_toBottomOf="@id/write_comment_part" />
+                <Button
+                    android:id="@+id/comment_save_btn"
+                    android:text="등록"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:background="@drawable/rounded_border_4dp_ffe34e"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toEndOf="@id/write_comment_part"
+                    app:layout_constraintTop_toTopOf="@id/write_comment_part"
+                    app:layout_constraintBottom_toBottomOf="@id/write_comment_part"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/reload_btn"
+                android:background="@drawable/reload_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="24dp"
+                app:layout_constraintBottom_toTopOf="@id/comment_rv"
+                app:layout_constraintEnd_toEndOf="@id/scroll_part"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comment_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@id/reload_btn"
+                app:layout_constraintStart_toStartOf="@id/scroll_part">
+            </androidx.recyclerview.widget.RecyclerView>
+            <Button
+                android:id="@+id/more_comment_btn"
+                android:text="+  3개의 댓글 더 보기"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@id/scroll_part"
+                app:layout_constraintEnd_toEndOf="@id/scroll_part"
+                app:layout_constraintTop_toBottomOf="@id/comment_rv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
