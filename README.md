@@ -22,6 +22,10 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 
 
 ## 전체 설계도
+Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신하는 전체적인 동작 과정을 나타내는 블록 다이어그램은 다음과 같습니다.
+1. Main Thread에서 StringRequest 객체를 생성하여 RequestQueue에 전달한다.</br>
+2. RequestQueue에서 Thread를 실행시켜 서버에 요청한다.</br>
+3. 받은 응답을 다시 Main Thread로 전달한다.</br>
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img></br></br>
 
 <img src="./Image/request1.png" title="img" alt="img"></img>
