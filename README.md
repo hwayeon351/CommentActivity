@@ -39,10 +39,10 @@ Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신�
 ## 동작 과정
 ### 1. 댓글 로드
 * sendPOSTJournal_idRequest() -> journal_id를 담은 요청을 서버에 보내 comments 데이터를 응답 받는다. 각각의 댓글 데이터를 불러오기 위해 아래 과정을 comments에 담긴 comment_id 개수만큼 반복한다.
- * sendPOSTComment_idRequest() -> comment_id를 담은 요청을 서버에 보내고 user_id, comment_date, comment 데이터를  응답 받는다.
-  * sendPOSTUser_idRequest() -> user_id를 담은 요청을 서버에 보내고 nickname을 응답 받는다. nickname,  comment_date, comment를 담은 하나의 댓글 항목을 전체 댓글 리스트에 추가한다. 마지막 댓글 항목이라면 RecyclerView를 갱신한다.</br></br>
+   * sendPOSTComment_idRequest() -> comment_id를 담은 요청을 서버에 보내고 user_id, comment_date, comment 데이터를  응답 받는다.
+     * sendPOSTUser_idRequest() -> user_id를 담은 요청을 서버에 보내고 nickname을 응답 받는다. nickname,  comment_date, comment를 담은 하나의 댓글 항목을 전체 댓글 리스트에 추가한다. 마지막 댓글 항목이라면 RecyclerView를 갱신한다.</br></br>
 ### 2. 댓글 등록
-* user_id, comment_date, comment를 담은 요청을 서버에 전송하고 전체 댓글 리스트에 추가한 후, RecyclerView를 갱신한다.
+* sendPOSTCommentRequest() -> user_id, comment_date, comment를 담은 요청을 서버에 전송하고 전체 댓글 리스트에 추가한 후, RecyclerView를 갱신한다.
 
 
 ### 1. sendPOSTJournal_idRequest 함수
