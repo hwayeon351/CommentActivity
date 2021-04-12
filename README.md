@@ -4,7 +4,7 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 
 ## 주 기능</br>
 
-### 댓글 로드</br>
+### 1. 댓글 로드</br>
 * Fragment가 화면에 띄워질 때, 최근에 작성된 3개의 댓글을 확인할 수 있습니다.</br></br>
 <img src="./Image/image1.jpg" width="400px" height="600px" title="img" alt="img"></img></br>
 
@@ -15,7 +15,7 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 * '새로 고침' 버튼을 클릭하면, 댓글이 갱신됩니다.</br></br>
 <img src="./Image/image6.jpg" width="400px" height="600px" title="img" alt="img"></img></br>
 
-### 댓글 등록</br>
+### 2. 댓글 등록</br>
 * 새로운 댓글을 등록하고 확인할 수 있습니다.</br></br>
 <img src="./Image/image4.jpg" width="350px" height="600px" title="img" alt="img"></img>
 <img src="./Image/image5.jpg" width="350px" height="600px" title="img" alt="img"></img></br></br></br></br></br>
