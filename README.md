@@ -26,6 +26,7 @@ Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신�
 1. Main Thread에서 StringRequest 객체를 생성하여 RequestQueue에 전달한다.</br>
 2. RequestQueue에서 Thread를 실행시켜 서버에 요청한다.</br>
 3. 받은 응답을 다시 Main Thread로 전달한다.</br>
+통신을 수행하는 함수는 sendPOSTJournal_idRequest, sendPOSTJournal_idRequest, sendPOSTUser_idRequest, sendPOSTCommentRequest로 총 4개 입니다.
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img></br></br>
 
 <img src="./Image/request1.png" title="img" alt="img"></img>
