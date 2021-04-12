@@ -30,23 +30,24 @@ Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신�
 통신을 수행하는 함수는 sendPOSTJournal_idRequest, sendPOSTComment_idRequest, sendPOSTUser_idRequest, sendPOSTCommentRequest로 총 4개로 구성되어 있습니다.
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img></br></br>
 
-### DB 정보
+## DB 정보
 하나의 댓글 항목은 작성자 닉네임(nickname), 댓글 작성 시각(comment_date), 댓글 내용(comment)으로 구성했으며, 이와 관련한 DB정보는 다음과 같습니다.
 * Journal [journal_id, comments] // comments = 전체 댓글 아이디 목록 ex) comments: 1, 6, 13, 25</br>
 * User [user_id, nickname]</br>
-* Comment [comment_id, user_id, comment_date, comment]</br>
+* Comment [comment_id, user_id, comment_date, comment]</br></br>
 
-### 1. sendPOSTJournal_idRequest 함수 동작 과정
-<img src="./Image/request1.png" title="img" alt="img"></img>
+## 동작 과정
+### 1. sendPOSTJournal_idRequest 함수
+<img src="./Image/request1.png" title="img" alt="img"></img></br></br>
 
-### 2. sendPOSTComment_idRequest 함수 동작 과정
-<img src="./Image/request2.png" title="img" alt="img"></img>
+### 2. sendPOSTComment_idRequest 함수
+<img src="./Image/request2.png" title="img" alt="img"></img></br></br>
 
-### 3. sendPOSTUser_idRequest 함수 동작 과정
-<img src="./Image/request3.png" title="img" alt="img"></img>
+### 3. sendPOSTUser_idRequest 함수
+<img src="./Image/request3.png" title="img" alt="img"></img></br></br>
 
-### 4. sendPOSTCommentRequest로 함수 동작 과정
-<img src="./Image/request4.png" title="img" alt="img"></img>
+### 4. sendPOSTCommentRequest로 함수
+<img src="./Image/request4.png" title="img" alt="img"></img></br></br>
 
 
 
