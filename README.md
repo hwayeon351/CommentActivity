@@ -33,7 +33,7 @@ Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신�
 ### DB 정보
 하나의 댓글 항목은 작성자 닉네임(nickname), 댓글 작성 시각(comment_date), 댓글 내용(comment)으로 구성했으며, 이와 관련한 DB정보는 다음과 같습니다.
 Journal [journal_id, comments]</br>
-* comments = 전체 댓글 아이디 목록 ex) comments: 1, 6, 13, 25</br>
+// comments = 전체 댓글 아이디 목록 ex) comments: 1, 6, 13, 25</br>
 User [user_id, nickname]</br>
 Comment [comment_id, user_id, comment_date, comment]</br>
 
