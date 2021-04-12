@@ -18,10 +18,10 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 ### 댓글 등록</br>
 * 새로운 댓글을 등록하고 확인할 수 있습니다.</br></br>
 <img src="./Image/image4.jpg" width="400px" height="600px" title="img" alt="img"></img>
-<img src="./Image/image5.jpg" width="400px" height="600px" title="img" alt="img"></img></br>
+<img src="./Image/image5.jpg" width="400px" height="600px" title="img" alt="img"></img></br></br></br></br></br>
 
 
-## 전체 설계도</br>
+## 전체 설계도
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img>
 
 
