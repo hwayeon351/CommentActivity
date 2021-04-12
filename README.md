@@ -24,10 +24,10 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 ## 전체 설계도
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img></br></br>
 
-<img src="./Image/request1.jpg" title="img" alt="img"></img>
-<img src="./Image/request2.jpg" title="img" alt="img"></img>
-<img src="./Image/request3.jpg" title="img" alt="img"></img>
-<img src="./Image/request4.jpg" title="img" alt="img"></img>
+<img src="./Image/request1" title="img" alt="img"></img>
+<img src="./Image/request2" title="img" alt="img"></img>
+<img src="./Image/request3" title="img" alt="img"></img>
+<img src="./Image/request4" title="img" alt="img"></img>
 
 
 
