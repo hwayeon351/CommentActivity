@@ -14,9 +14,9 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 
 
 
-<img src="./Image/image1.png" width="200px" height="400px" title="img" alt="img"></img>
-<img src="./Image/image2.png" width="200px" height="400px" title="img" alt="img"></img>
-<img src="./Image/image3.png" width="200px" height="400px" title="img" alt="img"></img></br>
-<img src="./Image/image4.png" width="200px" height="400px" title="img" alt="img"></img>
-<img src="./Image/image5.png" width="200px" height="400px" title="img" alt="img"></img>
-<img src="./Image/image6.png" width="200px" height="400px" title="img" alt="img"></img></br>
+<img src="./Image/image1.jpg" width="200px" height="400px" title="img" alt="img"></img>
+<img src="./Image/image2.jpg" width="200px" height="400px" title="img" alt="img"></img>
+<img src="./Image/image3.jpg" width="200px" height="400px" title="img" alt="img"></img></br>
+<img src="./Image/image4.jpg" width="200px" height="400px" title="img" alt="img"></img>
+<img src="./Image/image5.jpg" width="200px" height="400px" title="img" alt="img"></img>
+<img src="./Image/image6.jpg" width="200px" height="400px" title="img" alt="img"></img></br>
