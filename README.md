@@ -26,20 +26,27 @@ Volley를 사용해 네트워크 작업을 실행하고 RecyclerView를 갱신�
 1. Main Thread에서 StringRequest 객체를 생성하여 RequestQueue에 전달한다.</br>
 2. RequestQueue에서 Thread를 실행시켜 서버에 요청한다.</br>
 3. 받은 응답을 다시 Main Thread로 전달한다.</br>
+
 통신을 수행하는 함수는 sendPOSTJournal_idRequest, sendPOSTComment_idRequest, sendPOSTUser_idRequest, sendPOSTCommentRequest로 총 4개로 구성되어 있습니다.
 <img src="./Image/Architecture.jpg" title="img" alt="img"></img></br></br>
 
+### DB 정보
+하나의 댓글 항목은 작성자 닉네임(nickname), 댓글 작성 시각(comment_date), 댓글 내용(comment)으로 구성했으며, 이와 관련한 DB정보는 다음과 같습니다.
+Journal [journal_id, comments]</br>
+* comments = 전체 댓글 아이디 목록 ex) comments: 1, 6, 13, 25</br>
+User [user_id, nickname]</br>
+Comment [comment_id, user_id, comment_date, comment]</br>
 
-### sendPOSTJournal_idRequest 함수 동작 과정
+### 1. sendPOSTJournal_idRequest 함수 동작 과정
 <img src="./Image/request1.png" title="img" alt="img"></img>
 
-### sendPOSTComment_idRequest 함수 동작 과정
+### 2. sendPOSTComment_idRequest 함수 동작 과정
 <img src="./Image/request2.png" title="img" alt="img"></img>
 
-### sendPOSTUser_idRequest 함수 동작 과정
+### 3. sendPOSTUser_idRequest 함수 동작 과정
 <img src="./Image/request3.png" title="img" alt="img"></img>
 
-### sendPOSTCommentRequest로 함수 동작 과정
+### 4. sendPOSTCommentRequest로 함수 동작 과정
 <img src="./Image/request4.png" title="img" alt="img"></img>
 
 
