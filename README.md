@@ -22,7 +22,7 @@ Android에서 공식적으로 지원하는 Volley 라이브러리를 사용하�
 
 
 ## 전체 설계도</br>
-<img src="./Image/Architecture.jpeg" title="img" alt="img"></img>
+<img src="./Image/Architecture.jpg" title="img" alt="img"></img>
 
 
 
